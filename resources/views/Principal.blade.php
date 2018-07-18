@@ -6,7 +6,7 @@
   <title>CFE | Reportes de Confiabilidad</title>
 
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="fonts/font-awesome.min.css">
   <link rel="stylesheet" href="fonts/ionicons.min.css">
   <link rel="stylesheet" href="dist/css/AdminLTE.min.css">
@@ -28,7 +28,6 @@
 
 </head>
 <body class="hold-transition skin-green sidebar-mini">
-  <div class="wrapper">
 
     <header class="main-header">
       <!-- Logo -->
@@ -130,7 +129,7 @@
                       <li <a href="index.html"><i></i>SUBESTACIONES</a></li>
                        </ul> 
                   </section>
-            
+        </aside>
                                 <!-- jQuery 2.1.4 -->
                                 <script src="plugins/jQuery/jQuery-2.1.4.min.js"></script>
                                 <!-- jQuery UI 1.11.4 -->
