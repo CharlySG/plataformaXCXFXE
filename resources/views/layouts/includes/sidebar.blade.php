@@ -1,189 +1,28 @@
-<aside class="main-sidebar">
-    <section class="sidebar">
-        <ul class="sidebar-menu">
-            <li class="header">CONSULTAS</li>
-            <li class="treeview">
-                <a href="#">
-                    <i>
-                        <span>RESULTADO META VS REAL</span>
-                    </i>
-                    <ul class="treeview-menu">
-                        <li <a href="index.html">
-                            <i></i> SAIDI</a>
-                </li>
-                <li>
-                    <a href="index2.html">
-                        <i class="fa fa-circle-o"></i> SAIFI</a>
-                </li>
-                <li>
-                    <a href="index2.html">
-                        <i class="fa fa-circle-o"></i> CAIDI</a>
-                </li>
-                <li>
-                    <a href="index2.html">
-                        <i class="fa fa-circle-o"></i> TPR</a>
-                </li>
-                <li>
-                    <a href="index2.html">
-                        <i class="fa fa-circle-o"></i> UPA</a>
-                </li>
+<ul id="slide-out" class="sidenav">
+    <li><div class="user-view">
+      <div class="background">
+        <img src="https://images.unsplash.com/photo-1509390726584-faaa21c8ac95?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=ebad4a7a9785e16a2bf213b0676bd039&auto=format&fit=crop&w=300&q=80">
+      </div>
+      <a href="#user"><img class="circle" src="images/yuna.jpg"></a>
+      <a href="#name"><span class="white-text name">{{Auth::user()->name}}</span></a>
+      <a href="#email"><span class="white-text email">{{Auth::user()->email}}</span></a>
+    </div></li>
+    <li><a href="#!">First Link With Icon</a></li>
+    <li><a href="#!">Second Link</a></li>
+    <li><div class="divider"></div></li>
+    <li class="no-padding">
+        <ul class="collapsible collapsible-accordion">
+          <li class="bold"><a class="collapsible-header waves-effect waves-teal" tabindex="0"><i class="material-icons">assessment</i>JavaScript</a>
+              <div class="collapsible-body" style="">
+                <ul>
+                  <li><a href="auto-init.html">Auto Init</a></li>
+                  <li><a href="carousel.html">Carousel</a></li>
+                  <li class="active"><a href="collapsible.html">Collapsible</a></li>
+                  <li><a href="dropdown.html">Dropdown</a></li>
+                  <li><a href="feature-discovery.html">FeatureDiscovery</a></li>
                 </ul>
-    </section>
-    <section class="sidebar">
-        <ul class="sidebar-menu">
-            <li class="header"></li>
-            <li class="treeview">
-                <a href="#">
-                    <i>
-                        <span>CONFIABILIDAD MENSUAL</span>
-                    </i>
-                    <ul class="treeview-menu">
-                        <li <a href="index.html">
-                            <i></i>Foranea</a>
-                </li>
-                <li>
-                    <a href="index2.html">
-                        <i class="fa fa-circle-o"></i>Urbana</a>
-                </li>
-                <li>
-                    <a href="index2.html">
-                        <i class="fa fa-circle-o"></i>Villaflores</a>
-                </li>
-                <li>
-                    <a href="index2.html">
-                        <i class="fa fa-circle-o"></i>Cintalapa</a>
-                </li>
-                <li>
-                    <a href="index2.html">
-                        <i class="fa fa-circle-o"></i>Bochil</a>
-                </li>
-                <li>
-                    <a href="index2.html">
-                        <i class="fa fa-circle-o"></i>LST</a>
-                </li>
-                </ul>
-    </section>
-    <section class="sidebar">
-        <ul class="sidebar-menu">
-            <li class="header"></li>
-            <li class="treeview">
-                <a href="#">
-                    <i>
-                        <span>SAIDI POR CAUSA</span>
-                    </i>
-                    <ul class="treeview-menu">
-                        <li <a href="index.html">
-                            <i></i>Causas</a>
-                </li>
-                </ul>
-    </section>
-
-    <section class="sidebar">
-        <ul class="sidebar-menu">
-            <li class="header"></li>
-            <li class="treeview">
-                <a href="#">
-                    <i>
-                        <span>RAMALES POR CAUSA</span>
-                    </i>
-                    <ul class="treeview-menu">
-                        <li <a href="index.html">
-                            <i></i>LMX</a>
-                </li>
-                <li>
-                    <a href="index2.html">
-                        <i class="fa fa-circle-o"></i>GIA</a>
-                </li>
-                <li>
-                    <a href="index2.html">
-                        <i class="fa fa-circle-o"></i>TGD</a>
-                </li>
-                <li>
-                    <a href="index2.html">
-                        <i class="fa fa-circle-o"></i>JUY</a>
-                </li>
-                <li>
-                    <a href="index2.html">
-                        <i class="fa fa-circle-o"></i>VFD</a>
-                </li>
-                <li>
-                    <a href="index2.html">
-                        <i class="fa fa-circle-o"></i>RDB</a>
-                </li>
-                <li>
-                    <a href="index2.html">
-                        <i class="fa fa-circle-o"></i>TGU</a>
-                </li>
-                <li>
-                    <a href="index.html">
-                        <i></i>TXN</a>
-                </li>
-                <li>
-                    <a href="index2.html">
-                        <i class="fa fa-circle-o"></i>TXS</a>
-                </li>
-                <li>
-                    <a href="index2.html">
-                        <i class="fa fa-circle-o"></i>OCZ</a>
-                </li>
-                <li>
-                    <a href="index2.html">
-                        <i class="fa fa-circle-o"></i>IPD</a>
-                </li>
-                <li>
-                    <a href="index2.html">
-                        <i class="fa fa-circle-o"></i>LGZ</a>
-                </li>
-                <li>
-                    <a href="index2.html">
-                        <i class="fa fa-circle-o"></i>CIT</a>
-                </li>
-                <li>
-                    <a href="index2.html">
-                        <i class="fa fa-circle-o"></i>MAA</a>
-                </li>
-                <li>
-                    <a href="index.html">
-                        <i></i>COP</a>
-                </li>
-                <li>
-                    <a href="index2.html">
-                        <i class="fa fa-circle-o"></i>MPE</a>
-                </li>
-                <li>
-                    <a href="index2.html">
-                        <i class="fa fa-circle-o"></i>PED</a>
-                </li>
-                <li>
-                    <a href="index2.html">
-                        <i class="fa fa-circle-o"></i>SMJ</a>
-                </li>
-                <li>
-                    <a href="index2.html">
-                        <i class="fa fa-circle-o"></i>AAA</a>
-                </li>
-                <li>
-                    <a href="index2.html">
-                        <i class="fa fa-circle-o"></i>SOY</a>
-                </li>
-                <li>
-                    <a href="index2.html">
-                        <i class="fa fa-circle-o"></i>ANG</a>
-                </li>
-                </ul>
-    </section>
-    <section class="sidebar">
-        <ul class="sidebar-menu">
-            <li class="header"></li>
-            <li class="treeview">
-                <a href="#">
-                    <i>
-                        <span>SAIDI POR CIRCUITO VS MANTTO</span>
-                    </i>
-                    <ul class="treeview-menu">
-                        <li <a href="index.html">
-                            <i></i>SUBESTACIONES</a>
-                </li>
-                </ul>
-    </section>
-</aside>
+              </div>
+            </li>
+        </ul>
+      </li>
+  </ul>
