@@ -14,12 +14,10 @@
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/inicio','inicio@init');
-
 Auth::routes();
-
-Route::get('/home', 'inicio@init')->name('home');
-
+Route::get('/home', 'HomeController@index');
+Route::get('/reportes/saidi_por_causa', 'saidi_por_causa@init');
+Route::get('reportes/confiabilidad_mensual','ConfiabilidadController@init');
 
 
 Route::get('/lmx','NewController@LMX');
@@ -65,7 +63,6 @@ Route::get('/soy','NewController@SOY');
 Route::get('/ang','NewController@ANG');
 
 
-Route::get('/confi','ConfiabilidadController@CONFI');
 
 
 Route::get('/mantto','OtherController@MANTTO');

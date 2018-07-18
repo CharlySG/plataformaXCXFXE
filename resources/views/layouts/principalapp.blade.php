@@ -11,17 +11,13 @@
 </head>
 <body>
     @include('layouts.includes.header') 
-    @include('layouts.includes.sidebar')
-    <div class="container">    
+    @include('layouts.includes.sidebar')   
         @yield('content')
-        <div class="row">
-            
-        </div>
-    </div>
     @yield('content_js')
     <script src="{{ asset('js/jquery.js') }}"></script>
     <script src="{{ asset('js/materialize.js') }}"></script>
     <script src="{{ asset('js/app.js') }}"></script>
+    <script src="{{ asset('js/sidebar_actions.js')}}"></script>
     {{-- <script src="{{ asset('js/header.js') }}"></script> --}}
 </body>
 </html>

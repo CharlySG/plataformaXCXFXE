@@ -3,15 +3,15 @@
       <div class="background">
         <img src="https://images.unsplash.com/photo-1509390726584-faaa21c8ac95?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=ebad4a7a9785e16a2bf213b0676bd039&auto=format&fit=crop&w=300&q=80">
       </div>
-      <a href="#user"><img class="circle" src="images/yuna.jpg"></a>
+      <a href="#user"><i class="material-icons">user</i></a>
       <a href="#name"><span class="white-text name">{{Auth::user()->name}}</span></a>
       <a href="#email"><span class="white-text email">{{Auth::user()->email}}</span></a>
     </div></li>
     {{-- <li><a href="#!">First Link With Icon</a></li>
     <li><a href="#!">Second Link</a></li> --}}
     <li><div class="divider"></div></li>
-    <li><a href="#!">SAIDI POR CAUSA</a></li>
-    <li><a href="#!">CONFIABILIDAD MENSUAL</a></li>
+    <li><a href="#!" onclick="getView('reportes/saidi_por_causa');">SAIDI POR CAUSA</a></li>
+    <li><a href="#!" onclick="getView('reportes/confiabilidad_mensual')">CONFIABILIDAD MENSUAL</a></li>
     <li><a href="#!">SAIDI POR CIRCUITO VS MANTTO</a></li>
     <li class="no-padding">
         <ul class="collapsible collapsible-accordion">
@@ -19,7 +19,7 @@
             <a class="collapsible-header waves-effect waves-teal" tabindex="0"><i class="material-icons">assessment</i>RESULTADO META VS REAL</a>
               <div class="collapsible-body" style="">
                 <ul>
-                  <li><a href="auto-init.html">SAIDI</a></li>
+                  <li><a>SAIDI</a></li>
                   <li><a href="carousel.html">SAIFI</a></li>
                   <li class="active"><a href="collapsible.html">CAIDI</a></li>
                   <li><a href="dropdown.html">TPR</a></li>
