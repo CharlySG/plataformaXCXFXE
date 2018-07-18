@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('content')
 <center>
-	<h2><b> SAIDI</b></h2>
+	<h2><b> SAIFI</b></h2>
 </center>
 <div class="container">
   <table class="table table-striped">
@@ -27,19 +27,19 @@
 
       <th scope="col">Foranea</th>
       <th scope="col">META</th>
-      <th scope="col">0.140</th>
-      <th scope="col">0.138</th>
-      <th scope="col">0.289</th>
-      <th scope="col">1.717</th>
-      <th scope="col">1.018</th>
-      <th scope="col">0.653</th>
-      <th scope="col">0.394</th>
-      <th scope="col">1.358</th>
-      <th scope="col">0.433</th>
-      <th scope="col">0.765</th>
-      <th scope="col">0.474</th>
-      <th scope="col">0.598</th>
-      <th scope="col">7.98</th>     
+      <th scope="col">0.004</th>
+      <th scope="col">0.002</th>
+      <th scope="col">0.006</th>
+      <th scope="col">0.015</th>
+      <th scope="col">0.031</th>
+      <th scope="col">0.018</th>
+      <th scope="col">0.008</th>
+      <th scope="col">0.014</th>
+      <th scope="col">0.007</th>
+      <th scope="col">0.015</th>
+      <th scope="col">0.008</th>
+      <th scope="col">0.006</th>
+      <th scope="col">0.13</th>     
     </tr>
   </thead>  
    <tbody>
@@ -47,14 +47,14 @@
    		<td></td>
    		<td>REAL</td>	
   	@foreach($Datos as $D)
-	<td>{{$D->SAIDI}} </td>
+	<td>{{$D->SAIFI}} </td>
   	@endforeach  	
   		</tr>	
         <tr>
        <td>Total Acumulado</td>
        <td></td>
     @foreach($Dat as $f)
-  <td><b>{{$f->SAIDI}}</b></td>
+  <td><b>{{$f->SAIFI}}</b></td>
     @endforeach   
       </tr>   	
   	  	  </tbody>
@@ -364,5 +364,3 @@
      </div>
 
 @endsection
-
- 

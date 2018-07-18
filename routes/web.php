@@ -76,3 +76,4 @@ Route::get('/caidi','CaidiController@CAIDI');
 Route::get('/Principal', function () {
     return view('Principal');});
 
+Route::get('/saifimeta','saifimetaController@METASAIFI');
