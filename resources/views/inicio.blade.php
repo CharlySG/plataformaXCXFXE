@@ -1,9 +1,6 @@
-@extends('layouts.app')
+@extends('layouts.principalapp')
 @section('content')
-   <center>
-      <h1>SAIDI ZONA POR CAUSA </h1><br>
-   </center>
-<div class="container">
+<div class="col-s6">
   <table class="table table-striped">
   <thead>
     <tr>
@@ -36,6 +33,5 @@
 </table>
 
 </div>
-
 @endsection
 

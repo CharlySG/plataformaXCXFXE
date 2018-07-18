@@ -6,7 +6,7 @@
   <title>CFE | Reportes de Confiabilidad</title>
 
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="fonts/font-awesome.min.css">
   <link rel="stylesheet" href="fonts/ionicons.min.css">
   <link rel="stylesheet" href="dist/css/AdminLTE.min.css">
@@ -28,7 +28,6 @@
 
 </head>
 <body class="hold-transition skin-green sidebar-mini">
-  <div class="wrapper">
 
     <header class="main-header">
       <!-- Logo -->
@@ -130,68 +129,7 @@
                       <li <a href="index.html"><i></i>SUBESTACIONES</a></li>
                        </ul> 
                   </section>
-                    <div class="content-wrapper">
-                  <section class="content-header">
-    <select>
-      <option value="" disabled selected>Choose your option</option>
-      <option value="1">Option 1</option>
-      <option value="2">Option 2</option>
-      <option value="3">Option 3</option>
-    </select>
-    <label>Materialize Select</label>
-  </div>
-
-  <div class="input-field col s12">
-    <select multiple>
-      <option value="" disabled selected>Choose your option</option>
-      <option value="1">Option 1</option>
-      <option value="2">Option 2</option>
-      <option value="3">Option 3</option>
-    </select>
-    <label>Materialize Multiple Select</label>
-  </div>
-
-  <div class="input-field col s12">
-    <select>
-      <optgroup label="team 1">
-        <option value="1">Option 1</option>
-        <option value="2">Option 2</option>
-      </optgroup>
-      <optgroup label="team 2">
-        <option value="3">Option 3</option>
-        <option value="4">Option 4</option>
-      </optgroup>
-    </select>
-    <label>Optgroups</label>
-  </div>
-
-  <div class="input-field col s12 m6">
-    <select class="icons">
-      <option value="" disabled selected>Choose your option</option>
-      <option value="" data-icon="images/sample-1.jpg">example 1</option>
-      <option value="" data-icon="images/office.jpg">example 2</option>
-      <option value="" data-icon="images/yuna.jpg">example 3</option>
-    </select>
-    <label>Images in select</label>
-  </div>
-  <div class="input-field col s12 m6">
-    <select class="icons">
-      <option value="" disabled selected>Choose your option</option>
-      <option value="" data-icon="images/sample-1.jpg" class="left">example 1</option>
-      <option value="" data-icon="images/office.jpg" class="left">example 2</option>
-      <option value="" data-icon="images/yuna.jpg" class="left">example 3</option>
-    </select>
-    <label>Images in select</label>
-  </div>
-
-  <label>Browser Select</label>
-  <select class="browser-default">
-    <option value="" disabled selected>Choose your option</option>
-    <option value="1">Option 1</option>
-    <option value="2">Option 2</option>
-    <option value="3">Option 3</option>
-  </select>
-            </section>
+        </aside>
                                 <!-- jQuery 2.1.4 -->
                                 <script src="plugins/jQuery/jQuery-2.1.4.min.js"></script>
                                 <!-- jQuery UI 1.11.4 -->
