@@ -12,19 +12,19 @@
     <li><div class="divider"></div></li>
     <li><a href="#!" onclick="getView('reportes/saidi_por_causa');">SAIDI POR CAUSA</a></li>
     <li><a href="#!" onclick="getView('reportes/confiabilidad_mensual')">CONFIABILIDAD MENSUAL</a></li>
-    <li><a href="#!">SAIDI POR CIRCUITO VS MANTTO</a></li>
+    <li><a href="#!">SAIDI CIRCUITO VS MANTTO</a></li>
     <li class="no-padding">
         <ul class="collapsible collapsible-accordion">
           <li class="bold">
             <a class="collapsible-header waves-effect waves-teal" tabindex="0"><i class="material-icons">assessment</i>RESULTADO META VS REAL</a>
               <div class="collapsible-body" style="">
                 <ul>
-                  <li><a>SAIDI</a></li>
-                  <li><a href="carousel.html">SAIFI</a></li>
-                  <li class="active"><a href="collapsible.html">CAIDI</a></li>
+                  <li><a href="#!" onclick="getView('reportes/saidi_meta');">SAIDI</a></li>
+                  <li><a href="#!" onclick="getView('reportes/saifi_meta');">SAIFI</a></li>
+                  <li><a href="#!" onclick="getView('reportes/caidi_meta');">CAIDI</a></li>
                   <li><a href="dropdown.html">TPR</a></li>
-                  <li><a href="feature-discovery.html">NI</a></li>
-                  <li><a href="feature-discovery.html">UPA</a></li>
+                  <li><a href="#!" onclick="getView('reportes/ni_meta');">NI</a></li>
+                  <li><a href="#!" onclick="getView('reportes/upa_meta');">UPA</a></li>
                 </ul>
               </div>
             </li>
@@ -32,26 +32,26 @@
               <a class="collapsible-header waves-effect waves-teal" tabindex="0"><i class="material-icons">assessment</i>RAMALES POR CAUSA</a>
                 <div class="collapsible-body" style="">
                   <ul>
-                    <li><a href="auto-init.html">LMX</a></li>
-                    <li><a href="carousel.html">GIA</a></li>
-                    <li class="active"><a href="collapsible.html">TGD</a></li>
-                    <li><a href="dropdown.html">JUY</a></li>
-                    <li><a href="feature-discovery.html">VFD</a></li>
-                    <li><a href="auto-init.html">RDB</a></li>
-                    <li><a href="auto-init.html">TGU</a></li>
-                    <li><a href="auto-init.html">TXN</a></li>
-                    <li><a href="auto-init.html">TXS</a></li>
-                    <li><a href="auto-init.html">OCZ</a></li>
-                    <li><a href="auto-init.html">IPD</a></li>
-                    <li><a href="auto-init.html">LGZ</a></li>
-                    <li><a href="auto-init.html">CIT</a></li>
-                    <li><a href="auto-init.html">MAA</a></li>
-                    <li><a href="auto-init.html">COP</a></li>
-                    <li><a href="auto-init.html">MPE</a></li>
-                    <li><a href="auto-init.html">PED</a></li>
-                    <li><a href="auto-init.html">SMJ</a></li>
-                    <li><a href="auto-init.html">AAA</a></li>
-                    <li><a href="auto-init.html">SOY</a></li>
+                    <li><a href="#!" onclick="getView('reportes/lmx');">LMX</a></li>
+                    <li><a href="#!" onclick="getView('reportes/gia');">GIA</a></li>
+                    <li><a href="#!" onclick="getView('reportes/tgd');">TGD</a></li>
+                    <li><a href="#!" onclick="getView('reportes/juy');">JUY</a></li>
+                    <li><a href="#!" onclick="getView('reportes/vfd');">VFD</a></li>
+                    <li><a href="#!" onclick="getView('reportes/rdb');">RDB</a></li>
+                    <li><a href="#!" onclick="getView('reportes/tgu');">TGU</a></li>
+                    <li><a href="#!" onclick="getView('reportes/txn');">TXN</a></li>
+                    <li><a href="#!" onclick="getView('reportes/txs');">TXS</a></li>
+                    <li><a href="#!" onclick="getView('reportes/ocz');">OCZ</a></li>
+                    <li><a href="#!" onclick="getView('reportes/ipd');">IPD</a></li>
+                    <li><a href="#!" onclick="getView('reportes/lgz');">LGZ</a></li>
+                    <li><a href="#!" onclick="getView('reportes/cit');">CIT</a></li>
+                    <li><a href="#!" onclick="getView('reportes/maa');">MAA</a></li>
+                    <li><a href="#!" onclick="getView('reportes/cop');">COP</a></li>
+                    <li><a href="#!" onclick="getView('reportes/mpe');">MPE</a></li>
+                    <li><a href="#!" onclick="getView('reportes/ped');">PED</a></li>
+                    <li><a href="#!" onclick="getView('reportes/smj');">SMJ</a></li>
+                    <li><a href="#!" onclick="getView('reportes/aaa');">AAA</a></li>
+                    <li><a href="#!" onclick="getView('reportes/soy');">SOY</a></li>
                     <li><a href="auto-init.html">PAR</a></li>
                     <li><a href="auto-init.html">BBN</a></li>
                   </ul>

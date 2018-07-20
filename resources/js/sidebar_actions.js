@@ -9,7 +9,7 @@ function getView(url){
         },
         error:data=>{
             M.toast({
-                html:'hay pedos en el server',
+                html:'No Disponible Ahora',
                 classes:'rounded red'
             });
         }

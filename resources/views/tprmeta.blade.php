@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('content')
 <center>
-	<h2><b> SAIDI</b></h2>
+	<h2><b> TPR</b></h2>
 </center>
 <div class="container">
   <table class="table table-striped">
@@ -15,11 +15,11 @@
       <th scope="col">Abr</th>
       <th scope="col">May</th>
       <th scope="col">Jun</th>
-      <th scope="col">Jul</th>      
+      <th scope="col">Jul</th>
       <th scope="col">Ago</th>
       <th scope="col">Sep</th>
       <th scope="col">Oct</th>
-      <th scope="col">Nov</th>  
+      <th scope="col">Nov</th>
       <th scope="col">Dic</th>
       <th scope="col">Total Acum</th>
     </tr>
@@ -27,54 +27,54 @@
 
       <th scope="col">Foranea</th>
       <th scope="col">META</th>
-      <th scope="col">0.140</th>
-      <th scope="col">0.138</th>
-      <th scope="col">0.289</th>
-      <th scope="col">1.717</th>
-      <th scope="col">1.018</th>
-      <th scope="col">0.653</th>
-      <th scope="col">0.394</th>
-      <th scope="col">1.358</th>
-      <th scope="col">0.433</th>
-      <th scope="col">0.765</th>
-      <th scope="col">0.474</th>
-      <th scope="col">0.598</th>
-      <th scope="col">7.98</th>     
+      <th scope="col">84.000</th>
+      <th scope="col">74.000</th>
+      <th scope="col">102.000</th>
+      <th scope="col">167.000</th>
+      <th scope="col">191.000</th>
+      <th scope="col">194.000</th>
+      <th scope="col">196.000</th>
+      <th scope="col">223.000</th>
+      <th scope="col">230.000</th>
+      <th scope="col">311.000</th>
+      <th scope="col">311.000</th>
+      <th scope="col">311.000</th>
+      <th scope="col"></th>
     </tr>
-  </thead>  
+  </thead>
    <tbody>
    	<tr>
    		<td></td>
-   		<td>REAL</td>	
+   		<td>REAL</td>
   	@foreach($Datos as $D)
-	<td>{{$D->SAIDI}} </td>
-  	@endforeach  	
-  		</tr>	
+	<td>{{$D->SAIFI}} </td>
+  	@endforeach
+  		</tr>
         <tr>
        <td>Total Acumulado</td>
        <td></td>
     @foreach($Dat as $f)
-  <td><b>{{$f->SAIDI}}</b></td>
-    @endforeach   
-      </tr>   	
+  <td><b>{{$f->SAIFI}}</b></td>
+    @endforeach
+      </tr>
   	  	  </tbody>
 <thead>
   <tr>
       <th scope="col"></th>
       <th scope="col">META</th>
-      <th scope="col">0.534</th>
-      <th scope="col">0.135</th>
-      <th scope="col">0.607</th>
-      <th scope="col">1.644</th>
-      <th scope="col">1.097</th>
-      <th scope="col">0.646</th>
-      <th scope="col">0.356</th>
-      <th scope="col">1.475</th>
-      <th scope="col">0.498</th>
-      <th scope="col">0.765</th>
-      <th scope="col">0.491</th>
-      <th scope="col">0.582</th>
-      <th scope="col">7.98</th>     
+      <th scope="col">49.000</th>
+      <th scope="col">57.000</th>
+      <th scope="col">59.000</th>
+			<th scope="col">95.000</th>
+      <th scope="col">124.000</th>
+      <th scope="col">146.000</th>
+      <th scope="col">151.000</th>
+      <th scope="col">151.000</th>
+      <th scope="col">161.000</th>
+      <th scope="col">159.000</th>
+      <th scope="col"></th>
+      <th scope="col"></th>
+      <th scope="col"></th>
     </tr>
 </thead><br>
 <tbody>
@@ -83,15 +83,15 @@
       <td>REAL</td>
     @foreach($libros as $L)
   <td>{{$L->SAIDI}} </td>
-    @endforeach   
+    @endforeach
       </tr>
        <tr>
        <td>Total Acumulado</td>
        <td></td><td></td>
     @foreach($Da as $f)
   <td><b>{{$f->SAIDI}}</b> </td>
-    @endforeach   
-      </tr>          
+    @endforeach
+      </tr>
 </tbody>
 <thead>
   <tr>
@@ -118,15 +118,15 @@
       <td>REAL</td>
     @foreach($manzana as $M)
   <td>{{$M->SAIDI}} </td>
-    @endforeach  
+    @endforeach
     </tr>
      <tr>
        <td>Total Acumulado</td>
        <td></td>
     @foreach($Duno as $u)
   <td><b>{{$u->SAIDI}}</b> </td>
-    @endforeach   
-      </tr>           
+    @endforeach
+      </tr>
 </tbody>
 <thead>
   <tr>
@@ -153,15 +153,15 @@
       <td>REAL</td>
     @foreach($cintalapa as $c)
   <td>{{$c->SAIDI}} </td>
-    @endforeach  
+    @endforeach
     </tr>
 <tr>
        <td>Total Acumulado</td>
        <td></td>
     @foreach($cin as $ci)
   <td><b>{{$ci->SAIDI}}</b> </td>
-    @endforeach   
-      </tr>           
+    @endforeach
+      </tr>
 </tbody>
 <thead>
   <tr>
@@ -188,15 +188,15 @@
       <td>REAL</td>
     @foreach($bochil as $B)
   <td>{{$B->SAIDI}} </td>
-    @endforeach  
+    @endforeach
     </tr>
     <tr>
        <td>Total Acumulado</td>
        <td></td>
     @foreach($bo as $v)
   <td><b>{{$v->SAIDI}}</b> </td>
-    @endforeach   
-      </tr>           
+    @endforeach
+      </tr>
 </tbody>
 <thead>
   <tr>
@@ -215,7 +215,7 @@
       <th scope="col">0.000</th>
       <th scope="col">0.000</th>
       <th scope="col">0.000</th>
-  </tr>  
+  </tr>
 </thead>
 <tbody>
   <tr>
@@ -223,15 +223,15 @@
       <td>REAL</td>
     @foreach($lineas as $L)
   <td>{{$L->SAIDI}} </td>
-    @endforeach  
+    @endforeach
     </tr>
     <tr>
        <td>Total Acumulado</td>
        <td></td>
     @foreach($lin as $l)
   <td><b>{{$l->SAIDI}}</b> </td>
-    @endforeach   
-      </tr>           
+    @endforeach
+      </tr>
 </tbody>
 <thead>
    <tr>
@@ -250,7 +250,7 @@
       <th scope="col">0.000</th>
       <th scope="col">0.000</th>
       <th scope="col">0.000</th>
-  </tr>  
+  </tr>
 </thead>
 <tbody>
   <tr>
@@ -281,7 +281,7 @@
       <th scope="col">0.000</th>
       <th scope="col">0.000</th>
       <th scope="col">0.000</th>
-  </tr>  
+  </tr>
 </thead>
 <tbody>
   <tr>
@@ -312,7 +312,7 @@
       <th scope="col">0.000</th>
       <th scope="col">0.000</th>
       <th scope="col">0.000</th>
-  </tr>  
+  </tr>
 </thead>
 <tbody>
   <tr>
@@ -343,7 +343,7 @@
       <th scope="col">32.236</th>
       <th scope="col">34.697</th>
       <th scope="col"></th>
-  </tr>  
+  </tr>
    </thead>
    <tbody>
      <tr>
@@ -351,18 +351,16 @@
        <td>REAL</td>
        @foreach($lis as $lili)
        <td>{{$lili->SAIDI}}</td>
-       @endforeach     
-     </tr> 
+       @endforeach
+     </tr>
      <tr>
       <td>SAIDI ALCANZADO</td>
          @foreach($uno as $um)
         <td><b>{{$um->SAIDI}}</b></td>
         @endforeach
-       </tr>    
+       </tr>
      </tbody>
      </table>
      </div>
 
 @endsection
-
- 

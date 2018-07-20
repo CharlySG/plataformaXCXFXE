@@ -18,59 +18,33 @@ Auth::routes();
 Route::get('/home', 'HomeController@index');
 Route::get('/reportes/saidi_por_causa', 'saidi_por_causa@init');
 Route::get('reportes/confiabilidad_mensual','ConfiabilidadController@init');
+Route::get('reportes/lmx','ramales_por_causa@init');
+Route::get('reportes/gia','ramales_por_causa@GIA');
+Route::get('reportes/tgd','ramales_por_causa@TGD');
+Route::get('reportes/juy','ramales_por_causa@JUY');
+Route::get('reportes/vfd','ramales_por_causa@VFD');
+Route::get('reportes/rdb','ramales_por_causa@RDB');
+Route::get('reportes/tgu','ramales_por_causa@TGU');
+Route::get('reportes/txn','ramales_por_causa@TXN');
+Route::get('reportes/txs','ramales_por_causa@TXS');
+Route::get('reportes/ocz','ramales_por_causa@OCZ');
+Route::get('reportes/ipd','ramales_por_causa@IPD');
+Route::get('reportes/lgz','ramales_por_causa@LGZ');
+Route::get('reportes/cit','ramales_por_causa@CIT');
+Route::get('reportes/maa','ramales_por_causa@MAA');
+Route::get('reportes/cop','ramales_por_causa@COP');
+Route::get('reportes/mpe','ramales_por_causa@MPE');
+Route::get('reportes/ped','ramales_por_causa@PED');
+Route::get('reportes/smj','ramales_por_causa@SMJ');
+Route::get('reportes/aaa','ramales_por_causa@AAA');
+Route::get('reportes/soy','ramales_por_causa@SOY');
 
-
-Route::get('/lmx','NewController@LMX');
-
-Route::get('/gia','NewController@GIA');
-
-Route::get('/tgd','NewController@TGD');
-
-Route::get('/juy','NewController@JUY');
-
-Route::get('/vfd','NewController@VFD');
-
-Route::get('/rdb','NewController@RDB');
-
-Route::get('/tgu','NewController@TGU');
-
-Route::get('/txn','NewController@TXN');
-
-Route::get('/txs','NewController@TXS');
-
-Route::get('/ocz','NewController@OCZ');
-
-Route::get('/ipd','NewController@IPD');
-
-Route::get('/lgz','NewController@LGZ');
-
-Route::get('/cit','NewController@CIT');	
-
-Route::get('/maa','NewController@MAA');
-
-Route::get('/cop','NewController@COP');
-
-Route::get('/mpe','NewController@MPE');
-
-Route::get('/ped','NewController@PED');
-
-Route::get('/smj','NewController@SMJ');
-
-Route::get('/aaa','NewController@AAA');
-
-Route::get('/soy','NewController@SOY');
-
-Route::get('/ang','NewController@ANG');
-
-
-
-
-Route::get('/mantto','OtherController@MANTTO');
-
-
-Route::get('/caidi','CaidiController@CAIDI');
-
-Route::get('/Principal', function () {
-    return view('Principal');});
-
-Route::get('/saifimeta','saifimetaController@METASAIFI');
+Route::get('reportes/saidi_meta','meta_vs_real@saidi_meta');
+Route::get('reportes/saifi_meta','meta_vs_real@saifi_meta');
+Route::get('reportes/caidi_meta','meta_vs_real@caidi_meta');
+Route::get('reportes/ni_meta','meta_vs_real@ni_meta');
+Route::get('reportes/upa_meta','meta_vs_real@upa_meta');
+// Route::get('/Principal', function () {
+//     return view('Principal');});
+//
+// Route::get('/saifimeta','saifimetaController@METASAIFI');
