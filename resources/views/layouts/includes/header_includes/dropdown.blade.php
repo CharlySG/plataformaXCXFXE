@@ -13,7 +13,7 @@
   </li>
   <li>
     <a href="#!">
-      <i class="material-icons">notifications</i>Notificaciones
+      <i class="material-icons">file_upload</i>Subir Archivo
       <span class="badge">1</span>
     </a>
   </li>

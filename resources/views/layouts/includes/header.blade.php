@@ -1,5 +1,5 @@
 <div class="navbar-fixed">
-  <nav>
+  <nav class="green darken-2">
     <div class="nav-wrapper">
       <a href="#" data-target="slide-out" class="sidenav-trigger show-on-large"><i class="material-icons">menu</i></a>
       <a href="#!" class="brand-logo hide-on-med-and-down">Confiabilidad zona Tuxtla</a>

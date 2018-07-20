@@ -11,9 +11,10 @@ class saidi_por_causa extends Controller
     	$Datos->groupBy('Causa');
     	$Datos->havingRaw('COUNT(Causa) = NI ');
     	$Datos = $Datos->get();
-        $uno=DB::table('datos')->select(DB::raw('count(Causa) as NI,sum(TIU) as SAIDI'));
-		$uno=$uno->get();
-		return response()->json([
+      $uno=DB::table('datos')->select(DB::raw('count(Causa) as NI,sum(TIU) as SAIDI'));
+		  $uno=$uno->get();
+
+       return response()->json([
 			'html' => view('reportes.saidi_por_causa',compact('Datos','uno'))->render()
 		],200);
     }

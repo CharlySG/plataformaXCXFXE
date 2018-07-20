@@ -1,9 +1,13 @@
-<table class="striped">
+<center>
+	<h1>SAIDI ZONA POR CAUSA </h1><br>
+
+<div class="container">
+<table style="width:50%" class="table table-striped">
     <thead>
-        <tr>
-            <th scope="col">Causa</th>
-            <th scope="col">NI</th>
-            <th scope="col">SAIDI</th>
+        <tr class="green darken-4" style="color:white">
+            <th>Causa</th>
+            <th>NI</th>
+            <th>SAIDI</th>
         </tr>
     </thead>
     <tbody>
@@ -15,7 +19,7 @@
         </tr>
         @endforeach
         @foreach($uno as $u)
-        <tr class="grey darken-3" style="color:white">
+        <tr class="red accent-2" style="color:white">
             <td><strong>Total</strong></td>
             <td>{{$u->NI}} </td>
             <td>{{$u->SAIDI}} </td>
@@ -23,3 +27,5 @@
         @endforeach
     </tbody>
 </table>
+</div>
+</center>

@@ -1,6 +1,9 @@
+<center>
+	<h1>CONFIABILIDAD MENSUAL </h1><br>
+</center>
 <table class="responsive-table striped">
     <thead>
-        <tr>
+        <tr class="green darken-4" style="color:white">
             <th>Area</th>
             <th>Mes</th>
             <th>NI</th>
@@ -33,7 +36,7 @@
         </tr>
         @endforeach
         @foreach($Total as $T)
-        <tr class="grey darken-3" style="color:white">
+        <tr class="red accent-2" style="color:white">
             <td><strong>Totales</strong></td>
             <td>= </td>
             <td>{{$T->NI}}</td>

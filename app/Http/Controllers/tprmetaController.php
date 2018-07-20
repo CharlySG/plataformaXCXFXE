@@ -5,19 +5,19 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use DB;
 
-class OtherController extends Controller
+class tprmetaController extends Controller
 {
 
-    public function MANTTO(){
+    public function METASAIFI(){
 
-$Datos=DB::table('datos')->select(DB::raw('Area as AREA,sum(TIU) as SAIDI'));
+$Datos=DB::table('datos')->select(DB::raw('Area as AREA,sum(Usuario)/Usuario_Promedio as SAIFI'));
 $Datos=$Datos->where('Area','=','F');
-$Datos->groupBy('Area','Mes');
-$value = str_limit('MANTTO', 5);
+$Datos->groupBy('Area','Mes', 'Usuario_Promedio');
 $Datos=$Datos->get();
 
-$Dat=DB::table('datos')->select(DB::raw('sum(TIU) as SAIDI'));
+$Dat=DB::table('datos')->select(DB::raw('sum(Usuario)/Usuario_Promedio as SAIFI'));
 $Dat=$Dat->where('Area','=','F');
+$Dat->groupBy('Usuario_Promedio');
 $Dat=$Dat->get();
 
 $libros=DB::table('datos')->select(DB::raw('sum(TIU) as SAIDI'));
@@ -72,9 +72,7 @@ $lis=$lis->get();
 $uno=DB::table('datos')->select(DB::raw('count(Causa) as NI,sum(TIU) as SAIDI'));
         $uno=$uno->get();
 
-
-
-    	return view('mantto',compact('Datos','Dat','Da','libros','manzana','Duno',
+    	return view('saifimeta',compact('Datos','Dat','Da','libros','manzana','Duno',
     'cintalapa','cin','bochil','bo','lineas','lin','lis','uno'));
     }
 }

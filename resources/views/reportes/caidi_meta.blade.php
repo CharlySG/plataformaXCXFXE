@@ -1,0 +1,142 @@
+<center>
+	<h2><b> CAIDI </b></h2><br>
+</center>
+<div class="container">
+	<table class="table table-striped">
+		<thead>
+      <tr>
+       <th>AREAS</th>
+       <th></th>
+       <th>Ene</th>
+       <th>Feb</th>
+       <th>Mar</th>
+       <th>Abr</th>
+       <th>May</th>
+       <th>Jun</th>
+       <th>Jul</th>
+       <th>Ago</th>
+       <th>Sep</th>
+       <th>Oct</th>
+       <th>Nov</th>
+       <th>Dic</th>
+     </tr>
+     <tr>
+      <th>FORANEA</th>
+      <th>META</th>
+      <th>35.000</th>
+      <th>69.000</th>
+      <th>48.167</th>
+      <th>114.467</th>
+      <th>32.839</th>
+      <th>36.278</th>
+      <th>49.250</th>
+      <th>97.000</th>
+      <th>61.857</th>
+      <th>51.000</th>
+      <th>59.250</th>
+      <th>99.667</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+     <td></td>
+     <td>REAL</td>
+     @foreach($Datos as $D)
+     <td>{{$D->CAIDI}}</td>
+     @endforeach
+   </tr>
+   <tr>
+    <th>URBANA</th>
+    <th>META</th>
+    <th>133.500</th>
+    <th>67.500</th>
+    <th>101.167</th>
+    <th>102.750</th>
+    <th>37.828</th>
+    <th>32.300</th>
+    <th>50.857</th>
+    <th>98.333</th>
+    <th>49.800</th>
+    <thcol>54.643</th>
+    <th>54.556</th>
+    <th>116.400</th>
+  </tr>
+  <tr>
+   <td></td>
+   <td>REAL</td>
+   @foreach($urbana as $urb)
+   <td>{{$urb->CAIDI}}</td>
+   @endforeach
+ </tr>
+ <tr>
+  <th>VILLAFLORES</th>
+  <th>META</th>
+  <th>54.500</th>
+  <th>65.000</th>
+  <th>44.000</th>
+  <th>119.500</th>
+  <th>36.448</th>
+  <th>25.824</th>
+  <th>60.833</th>
+  <th>73.692</th>
+  <th>69.857</th>
+  <th>61.667</th>
+  <th>58.333</th>
+  <th>105.200</th>
+</tr>
+  <tr>
+   <td></td>
+   <td>REAL</td>
+   @foreach($villaflores as $villa)
+   <td>{{$villa->CAIDI}}</td>
+   @endforeach
+ </tr>
+ <tr>
+  <th>CINTALAPA</th>
+  <th>META</th>
+  <th>50.000</th>
+  <th>74.000</th>
+  <th>66.600</th>
+  <th>73.143</th>
+  <th>53.944</th>
+  <th>30.308</th>
+  <th>83.750</th>
+  <th>58.462</th>
+  <th>64.286</th>
+  <th>71.800</th>
+  <th>90.667</th>
+  <th>130.000</th>
+</tr>
+  <tr>
+   <td></td>
+   <td>REAL</td>
+   @foreach($cintalapa as $cin)
+   <td>{{$cin->CAIDI}}</td>
+   @endforeach
+ </tr>
+ <tr>
+  <th>BOCHIL</th>
+  <th>META</th>
+  <th>46.333</th>
+  <th>75.500</th>
+  <th>58.000</th>
+  <th>67.545</th>
+  <th>69.071</th>
+  <th>37.000</th>
+  <th>102.667</th>
+  <th>69.125</th>
+  <th>71.167</th>
+  <th>76.667</th>
+  <th>76.000</th>
+  <th>182.500</th>
+</tr>
+  <tr>
+   <td></td>
+   <td>REAL</td>
+   @foreach($bochil as $bo)
+   <td>{{$bo->CAIDI}}</td>
+   @endforeach
+ </tr>
+</tbody>
+</table>
+</div>

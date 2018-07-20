@@ -79,15 +79,14 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Sistema 
+                    Sistema
                 </div>
 
                 <div class="links">
-                    
+
                     <a href="https://google.com">Google</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    
+                  
+
                 </div>
             </div>
         </div>

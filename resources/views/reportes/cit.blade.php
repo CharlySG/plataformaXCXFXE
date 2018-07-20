@@ -1,10 +1,8 @@
-@extends('layouts.app')
-@section('content')
 <center>
-	<h1>Analisís de Ramales Por Circuito MPE </h1><br>
+	<h1>Analisis de Ramales Por Circuito CIT </h1>
 </center>
 <div class="container">
-  <table class="table">
+  <table class="table table-striped">
   <thead>
     <tr>
        <th scope="col">SE</th>
@@ -15,19 +13,16 @@
       <th scope="col">SAIDI</th>
       <th scope="col">DURACION</th>
       <th scope="col">DEMUA</th>
-      <th scope="col">USUARIOS</th>      
+      <th scope="col">USUARIOS</th>
       <th scope="col">SAIFI</th>
       <th scope="col">CAIDI</th>
       <th scope="col">TPR</th>
       <th scope="col">UPA</th>
-      
-    
-     
     </tr>
   </thead>
   <tbody>
     @foreach($Datos as $D)
-    <tr>  
+    <tr>
       <td>{{$D->SE}}</td>
      <td>{{$D->CIRCUITO}}</td>
      <td>{{$D->RAMAL}} </td>
@@ -41,13 +36,10 @@
      <td>{{$D->CAIDI}}</td>
      <td>{{$D->TPR}} </td>
      <td>{{$D->UPA}} </td>
-
     </tr>
     @endforeach
-  </tbody>
-  <tbody>
       @foreach($Total as $T)
-    <tr>
+    <tr class="red accent-2" style="color:white">
       <td>Total </td>
       <td> </td>
       <td> </td>
@@ -57,15 +49,12 @@
       <td>{{$T->DURACION}} </td>
       <td>{{$T->DEMUA}} </td>
       <td>{{$T->USUARIOS}} </td>
-       <td>{{$T->SAIFI}} </td>
-        <td>{{$T->CAIDI}} </td>
-         <td>{{$T->TPR}} </td>
-          <td>{{$T->UPA}} </td>     
+      <td>{{$T->SAIFI}} </td>
+      <td>{{$T->CAIDI}} </td>
+      <td>{{$T->TPR}} </td>
+      <td>{{$T->UPA}} </td>
     </tr>
     @endforeach
     </tbody>
 </table>
 </div>
-
-@endsection
-
