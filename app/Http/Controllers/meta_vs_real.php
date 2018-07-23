@@ -13,7 +13,6 @@ class meta_vs_real extends Controller
 $Datos=DB::table('datos')->select(DB::raw('Area as AREA,sum(TIU) as SAIDI'));
 $Datos=$Datos->where('Area','=','F');
 $Datos->groupBy('Area','Mes');
-$value = str_limit('MANTTO', 5);
 $Datos=$Datos->get();
 
 $Dat=DB::table('datos')->select(DB::raw('sum(TIU) as SAIDI'));
@@ -294,5 +293,41 @@ return response()->json([
 ],200);
 
     }
+public function tpr_meta(){
+
+    $Datos=DB::table('datos')->select(DB::raw('Duracion/sum(Causa) as TPR'));
+    $Datos=$Datos->where('Area','=','F');
+    $Datos->groupBy('Area','Mes', 'Usuario_Promedio');
+    $Datos=$Datos->get();
+
+    $Datos=DB::table('datos')->select(DB::raw('Duracion/sum(Causa) as TPR'));
+    $Datos=$Datos->where('Area','=','F');
+    $Datos->groupBy('Mes');
+    $Datos=$Datos->get();
+
+    $urbana=DB::table('datos')->select(DB::raw('Duracion/sum(Causa) as TPR'));
+    $urbana=$urbana->where('Area','=','G');
+    $urbana->groupBy('Mes');
+    $urbana=$urbana->get();
+
+    $villaflores=DB::table('datos')->select(DB::raw('Duracion/sum(Causa) as TPR'));
+    $villaflores=$villaflores->where('Area','=','H');
+    $villaflores->groupBy('Mes');
+    $villaflores=$villaflores->get();
+
+    $cintalapa=DB::table('datos')->select(DB::raw('Duracion/sum(Causa) as TPR'));
+    $cintalapa=$cintalapa->where('Area','=','I');
+    $cintalapa->groupBy('Mes');
+    $cintalapa=$cintalapa->get();
+
+    $bochil=DB::table('datos')->select(DB::raw('Duracion/sum(Causa) as TPR'));
+    $bochil=$bochil->where('Area','=','J');
+    $bochil->groupBy('Mes');
+    $bochil=$bochil->get();
+
+    return response()->json([
+    'html' => view('reportes.tpr_meta',compact('Datos','urbana','villaflores','cintalapa',
+      'bochil'))->render()
+    ],200);}
 
 }

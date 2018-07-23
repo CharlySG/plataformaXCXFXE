@@ -1,5 +1,5 @@
 <center>
-	<h4 style="color:green">Número de Interrupciones</h4>
+	<h4 style="color:green">TPR</h4>
 	<h6 style="color:green">Resultado Meta vs. Real</h6><br>
 </center>
 	<table class="table table-striped">
@@ -44,7 +44,7 @@
      <td></td>
      <td>REAL</td>
      @foreach($foranea as $f)
-     <td>{{$f->NI}}</td>
+     <td>{{$f->TPR}}</td>
      @endforeach
    </tr>
    <tr class="red lighten-4" style="color:black">

@@ -306,6 +306,31 @@ class ramales_por_causa extends Controller
         ],200);
  		}
 
+    public function PAR(){
+       	$Datos=DB::table('datos')->select(DB::raw('SE as SE,Circuito as CIRCUITO,Ramal as RAMAL,Causa as CAUSA,1 as NI,TIU as SAIDI,Duracion as DURACION,DEMUA as DEMUA,Usuario as USUARIOS,Usuario/Usuario_Promedio as SAIFI,DEMUA/Usuario as CAIDI,Duracion/1 as TPR,Usuario/1 as UPA'));
+        $Datos=$Datos->where('SE','=','PAR');
+        $Datos=$Datos->get();
+
+        $Total=DB::table('datos')->select(DB::raw('count(Causa) as NI, sum(TIU) as SAIDI,sum(Duracion) as DURACION,sum(DEMUA) as DEMUA,sum(Usuario) as USUARIOS,sum(Usuario/Usuario_Promedio) as SAIFI,sum(DEMUA)/sum(Usuario) as CAIDI,sum(Duracion)/count(Causa) as TPR,sum(Usuario)/count(Causa) as UPA '));
+        $Total=$Total->where('SE','=','PAR');
+        $Total=$Total->get();
+        return response() ->json([
+        'html' => view('reportes.par', compact('Datos','Total'))->render()
+        ],200);
+       }
+
+       public function BBN(){
+       $Datos=DB::table('datos')->select(DB::raw('SE as SE,Circuito as CIRCUITO,Ramal as RAMAL,Causa as CAUSA,1 as NI,TIU as SAIDI,Duracion as DURACION,DEMUA as DEMUA,Usuario as USUARIOS,Usuario/Usuario_Promedio as SAIFI,DEMUA/Usuario as CAIDI,Duracion/1 as TPR,Usuario/1 as UPA'));
+       $Datos=$Datos->where('SE','=','BBN');
+       $Datos=$Datos->get();
+
+        $Total=DB::table('datos')->select(DB::raw('count(Causa) as NI, sum(TIU) as SAIDI,sum(Duracion) as DURACION,sum(DEMUA) as DEMUA,sum(Usuario) as USUARIOS,sum(Usuario/Usuario_Promedio) as SAIFI,sum(DEMUA)/sum(Usuario) as CAIDI,sum(Duracion)/count(Causa) as TPR,sum(Usuario)/count(Causa) as UPA '));
+        $Total=$Total->where('SE','=','BBN');
+        $Total=$Total->get();
+        return response() ->json([
+        'html' => view('reportes.bbn', compact('Datos','Total'))->render()
+        ],200);
+       }
 //  		public function ANG(){
 //  			$Datos=DB::table('datos')->select(DB::raw('SE as SE,Circuito as CIRCUITO,Ramal as RAMAL,Causa as CAUSA,1 as NI,TIU as SAIDI,Duracion as DURACION,DEMUA as DEMUA,Usuario as USUARIOS,Usuario/Usuario_Promedio as SAIFI,DEMUA/Usuario as CAIDI,Duracion/1 as TPR,Usuario/1 as UPA'));
 //         $Datos=$Datos->where('SE','=','ANG');

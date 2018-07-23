@@ -10,7 +10,7 @@ class tprmetaController extends Controller
 
     public function METASAIFI(){
 
-$Datos=DB::table('datos')->select(DB::raw('Area as AREA,sum(Usuario)/Usuario_Promedio as SAIFI'));
+$Datos=DB::table('datos')->select(DB::raw('Duracion/count(Causa) as TPR'));
 $Datos=$Datos->where('Area','=','F');
 $Datos->groupBy('Area','Mes', 'Usuario_Promedio');
 $Datos=$Datos->get();

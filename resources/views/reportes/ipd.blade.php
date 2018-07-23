@@ -1,11 +1,11 @@
 <center>
-	<h1>Analisis de Ramales Por Circuito IPD </h1><br>
+	<h4 style="color:green">Analisis de Ramales por Circuito IPD</h4>
+	<h6 style="color:green">Ramales Por Causa</h6><br>
 </center>
-<div class="container">
   <table class="table table-striped">
   <thead>
-    <tr>
-       <th scope="col">SE</th>
+    <tr class="green darken-4" style="color:white">
+      <th scope="col">SE</th>
       <th scope="col">CIRCUITO</th>
       <th scope="col">RAMAL</th>
       <th scope="col">CAUSA</th>
@@ -60,4 +60,3 @@
     @endforeach
     </tbody>
 </table>
-</div>

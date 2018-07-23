@@ -1,10 +1,10 @@
 <center>
-	<h1>SAIFI</h1>
+	<h4 style="color:green">SAIFI</h4>
+	<h6 style="color:green">Resultado Meta vs. Real</h6><br>
 </center>
-<div class="container">
 	<table class="table table-striped">
 		<thead>
-			 <tr>
+			 <tr class="green darken-4" style="color:white">
        <th>AREAS</th>
        <th></th>
        <th>Ene</th>
@@ -47,10 +47,10 @@
     		 <td>{{$fora->SAIFI}}</td>
     		 @endforeach
     		 </tr>
-    		 <tr class="red accent-2" style="color:white">
+    		 <tr class="red lighten-4" style="color:black">
 			 <td>Total</td>
-    		 <td>=</td><td>=</td><td>=</td><td>=</td><td>=</td><td>=</td><td>=</td>
-    		 <td>=</td><td>=</td><td>=</td><td>=</td><td>=</td><td>=</td>
+			 <td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td>
+			<td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td>
     		 @foreach($Totalforanea as $total)
     		 <td>{{$total->SAIFI}}</td>
     		 @endforeach
@@ -79,10 +79,10 @@
     		 <td>{{$urba->SAIFI}}</td>
     		 @endforeach
     		 </tr>
-    		 <tr class="red accent-2" style="color:white">
+    		 <tr class="red lighten-4" style="color:black">
     		 <td>Total</td>
-    		 <td>=</td><td>=</td><td>=</td><td>=</td><td>=</td><td>=</td><td>=</td>
-    		 <td>=</td><td>=</td><td>=</td><td>=</td><td>=</td><td>=</td>
+				 <td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td>
+	 			<td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td>
     		 @foreach($Total as $t)
     		 <td>{{$t->SAIFI}}</td>
     		 @endforeach
@@ -111,10 +111,10 @@
     		 <td>{{$villa->SAIFI}}</td>
     		 @endforeach
     		 </tr>
-    		 <tr class="red accent-2" style="color:white">
+    		 <tr class="red lighten-4" style="color:black">
     		 <td>Total</td>
-    		 <td>=</td><td>=</td><td>=</td><td>=</td><td>=</td><td>=</td><td>=</td>
-    		 <td>=</td><td>=</td><td>=</td><td>=</td><td>=</td><td>=</td>
+				 <td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td>
+	 			<td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td>
     		 @foreach($totalvillaflores as $t)
     		 <td>{{$t->SAIFI}}</td>
     		 @endforeach
@@ -143,10 +143,10 @@
     		 <td>{{$cinta->SAIFI}}</td>
     		 @endforeach
     		 </tr>
-    		 <tr class="red accent-2" style="color:white">
+    		 <tr class="red lighten-4" style="color:black">
     		 <td>Total</td>
-    		 <td>=</td><td>=</td><td>=</td><td>=</td><td>=</td><td>=</td><td>=</td>
-    		 <td>=</td><td>=</td><td>=</td><td>=</td><td>=</td><td>=</td>
+				 <td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td>
+	 			<td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td>
     		 @foreach($totalcinta as $t)
     		 <td>{{$t->SAIFI}}</td>
     		 @endforeach
@@ -175,10 +175,10 @@
     		 <td>{{$bo->SAIFI}}</td>
     		 @endforeach
     </tr>
-    <tr class="red accent-2" style="color:white">
+    <tr class="red lighten-4" style="color:black">
     		 <td>Total</td>
-    		 <td>=</td><td>=</td><td>=</td><td>=</td><td>=</td><td>=</td><td>=</td>
-    		 <td>=</td><td>=</td><td>=</td><td>=</td><td>=</td><td>=</td>
+				 <td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td>
+	 			<td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td>
     		 @foreach($totalbochil as $t)
     		 <td>{{$t->SAIFI}}</td>
     		 @endforeach
@@ -207,16 +207,94 @@
     		 <td>{{$lts->SAIFI}}</td>
     		 @endforeach
     </tr>
-     <tr class="red accent-2" style="color:white">
+     <tr class="red lighten-4" style="color:black">
     		 <td>Total</td>
-    		 <td>=</td><td>=</td><td>=</td><td>=</td><td>=</td><td>=</td><td>=</td>
-    		 <td>=</td><td>=</td><td>=</td><td>=</td><td>=</td><td>=</td>
+				 <td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td>
+	 			<td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td>
     		 @foreach($totallts as $l)
     		 <td>{{$l->SAIFI}}</td>
     		 @endforeach
     		 </tr>
     		  <tr>
-      <th>Lineas</th>
+      <th>LINEAS</th>
+      <th>META</th>
+      <th>0.000</th>
+      <th>0.000</th>
+      <th>0.000</th>
+      <th>0.000</th>
+      <th>0.000</th>
+      <th>0.000</th>
+      <th>0.000</th>
+      <th>0.000</th>
+      <th>0.000</th>
+      <th>0.000</th>
+      <th>0.000</th>
+      <th>0.000</th>
+      <th>0.000</th>
+    </tr>
+    <tr>
+    	<td></td>
+    	<td>REAL</td>
+    	<td>0.000</td>
+    	<td>0.000</td>
+    	<td>0.000</td>
+    	<td>0.000</td>
+    	<td>0.000</td>
+    	<td>0.000</td>
+    	<td>0.000</td>
+    	<td>0.000</td>
+    	<td>0.000</td>
+    	<td>0.000</td>
+    	<td>0.000</td>
+    	<td>0.000</td>
+    	<td>0.000</td>
+    </tr>
+		<tr class="red lighten-4" style="color:black">
+			<td>Total Acumulado</td>
+			<td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td>
+			<td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td style=color:"red">--</td>
+		</tr>
+    <tr>
+      <th>PROTECCIONES</th>
+      <th>META</th>
+      <th>0.000</th>
+      <th>0.000</th>
+      <th>0.000</th>
+      <th>0.000</th>
+      <th>0.000</th>
+      <th>0.000</th>
+      <th>0.000</th>
+      <th>0.000</th>
+      <th>0.000</th>
+      <th>0.000</th>
+      <th>0.000</th>
+      <th>0.000</th>
+      <th>0.000</th>
+    </tr>
+    <tr>
+    	<td></td>
+    	<td>REAL</td>
+    	<td>0.000</td>
+    	<td>0.000</td>
+    	<td>0.000</td>
+    	<td>0.000</td>
+    	<td>0.000</td>
+    	<td>0.000</td>
+    	<td>0.000</td>
+    	<td>0.000</td>
+    	<td>0.000</td>
+    	<td>0.000</td>
+    	<td>0.000</td>
+    	<td>0.000</td>
+    	<td>0.000</td>
+    </tr>
+		<tr class="red lighten-4" style="color:black">
+			<td>Total Acumulado</td>
+			<td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td>
+			<td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td style=color:"red">--</td>
+		</tr>
+    <tr>
+      <th>SUBESTACIONES</th>
       <th>META</th>
       <th>0.000</th>
       <th>0.000</th>
@@ -250,7 +328,7 @@
     	<td>0.000</td>
     </tr>
     <tr>
-      <th>Protecciones</th>
+      <th>CONTROL</th>
       <th>META</th>
       <th>0.000</th>
       <th>0.000</th>
@@ -283,74 +361,11 @@
     	<td>0.000</td>
     	<td>0.000</td>
     </tr>
-    <tr>
-      <th>Subesta</th>
-      <th>META</th>
-      <th>0.000</th>
-      <th>0.000</th>
-      <th>0.000</th>
-      <th>0.000</th>
-      <th>0.000</th>
-      <th>0.000</th>
-      <th>0.000</th>
-      <th>0.000</th>
-      <th>0.000</th>
-      <th>0.000</th>
-      <th>0.000</th>
-      <th>0.000</th>
-      <th>0.000</th>
-    </tr>
-    <tr>
-    	<td></td>
-    	<td>REAL</td>
-    	<td>0.000</td>
-    	<td>0.000</td>
-    	<td>0.000</td>
-    	<td>0.000</td>
-    	<td>0.000</td>
-    	<td>0.000</td>
-    	<td>0.000</td>
-    	<td>0.000</td>
-    	<td>0.000</td>
-    	<td>0.000</td>
-    	<td>0.000</td>
-    	<td>0.000</td>
-    	<td>0.000</td>
-    </tr>
-    <tr>
-      <th>Control</th>
-      <th>META</th>
-      <th>0.000</th>
-      <th>0.000</th>
-      <th>0.000</th>
-      <th>0.000</th>
-      <th>0.000</th>
-      <th>0.000</th>
-      <th>0.000</th>
-      <th>0.000</th>
-      <th>0.000</th>
-      <th>0.000</th>
-      <th>0.000</th>
-      <th>0.000</th>
-      <th>0.000</th>
-    </tr>
-    <tr>
-    	<td></td>
-    	<td>REAL</td>
-    	<td>0.000</td>
-    	<td>0.000</td>
-    	<td>0.000</td>
-    	<td>0.000</td>
-    	<td>0.000</td>
-    	<td>0.000</td>
-    	<td>0.000</td>
-    	<td>0.000</td>
-    	<td>0.000</td>
-    	<td>0.000</td>
-    	<td>0.000</td>
-    	<td>0.000</td>
-    	<td>0.000</td>
-    </tr>
+		<tr class="red lighten-4" style="color:black">
+			<td>Total Acumulado</td>
+			<td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td>
+			<td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td style=color:"red">--</td>
+		</tr>
     <tr>
       <th>Meta Mensual</th>
       <th>META</th>
@@ -375,7 +390,7 @@
     		 <td>{{$meta->SAIFI}}</td>
     		 @endforeach
     </tr>
-    <tr class="red accent-2" style="color:white">
+    <tr class="grey darken-1" style="color:white">
     		 <td>Total</td>
     		 <td>=</td><td>=</td><td>=</td><td>=</td><td>=</td><td>=</td><td>=</td>
     		 <td>=</td><td>=</td><td>=</td><td>=</td><td>=</td><td>=</td>
@@ -387,4 +402,3 @@
 
 		</tbody>
 	</table>
-</div>

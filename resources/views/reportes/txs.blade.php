@@ -1,10 +1,10 @@
 <center>
-	<h1>Analisis de Ramales Por Circuito TXS </h1><br>
+	<h4 style="color:green">Analisis de Ramales por Circuito TXS</h4>
+	<h6 style="color:green">Ramales Por Causa</h6><br>
 </center>
-<div class="container">
   <table class="table">
   <thead>
-    <tr>
+    <tr class="green darken-4" style="color:white">
        <th scope="col">SE</th>
       <th scope="col">CIRCUITO</th>
       <th scope="col">RAMAL</th>
@@ -59,4 +59,3 @@
     @endforeach
     </tbody>
 </table>
-</div>
