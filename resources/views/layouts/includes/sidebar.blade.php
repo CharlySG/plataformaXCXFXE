@@ -22,7 +22,7 @@
                   <li><a href="#!" onclick="getView('reportes/saidi_meta');">SAIDI</a></li>
                   <li><a href="#!" onclick="getView('reportes/saifi_meta');">SAIFI</a></li>
                   <li><a href="#!" onclick="getView('reportes/caidi_meta');">CAIDI</a></li>
-                  <li><a href="dropdown.html">TPR</a></li>
+                  <li><a href="#!" onclick="getView('reportes/tpr_meta');">TPR</a></li>
                   <li><a href="#!" onclick="getView('reportes/ni_meta');">NI</a></li>
                   <li><a href="#!" onclick="getView('reportes/upa_meta');">UPA</a></li>
                 </ul>
@@ -52,8 +52,8 @@
                     <li><a href="#!" onclick="getView('reportes/smj');">SMJ</a></li>
                     <li><a href="#!" onclick="getView('reportes/aaa');">AAA</a></li>
                     <li><a href="#!" onclick="getView('reportes/soy');">SOY</a></li>
-                    <li><a href="auto-init.html">PAR</a></li>
-                    <li><a href="auto-init.html">BBN</a></li>
+                    <li><a href="#!" onclick="getView('reportes/par');">PAR</a></li>
+                    <li><a href="#!" onclick="getView('reportes/bbn');">BBN</a></li>
                   </ul>
                 </div>
               </li>

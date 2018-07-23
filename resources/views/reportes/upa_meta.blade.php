@@ -1,11 +1,11 @@
 <center>
-	<h2><b> UPA </b></h2><br>
+	<h4 style="color:green">UPA</h4>
+	<h6 style="color:green">Resultado Meta vs. Real</h6><br>
 </center>
-<div class="container">
 	<table class="table table-striped">
 <thead>
     <tr class="green darken-4" style="color:white">
-       <th>AREAS</th>
+      <th>AREAS</th>
      	<th></th>
       <th>Ene</th>
       <th>Feb</th>
@@ -267,4 +267,3 @@
 			</tr>
 			</table>
     </tbody>
-</div>

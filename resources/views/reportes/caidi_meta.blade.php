@@ -1,10 +1,10 @@
 <center>
-	<h2><b> CAIDI </b></h2><br>
+	<h4 style="color:green">CAIDI</h4>
+	<h6 style="color:green">Resultado Meta vs. Real</h6><br>
 </center>
-<div class="container">
 	<table class="table table-striped">
 		<thead>
-      <tr>
+      <tr class="green darken-4" style="color:white">
        <th>AREAS</th>
        <th></th>
        <th>Ene</th>
@@ -57,7 +57,7 @@
     <th>50.857</th>
     <th>98.333</th>
     <th>49.800</th>
-    <thcol>54.643</th>
+    <th>54.643</th>
     <th>54.556</th>
     <th>116.400</th>
   </tr>
@@ -139,4 +139,3 @@
  </tr>
 </tbody>
 </table>
-</div>
