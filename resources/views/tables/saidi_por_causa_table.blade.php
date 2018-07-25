@@ -1,6 +1,6 @@
 @foreach($Datos as $D)
 <tr>
-    <td style="text-align:center;">{{$D->Causa}}</td>
+    <td >{{$D->Causa}}</td>
     <td style="text-align:center;">{{$D->NI}}</td>
     <td style="text-align:center;">{{bcdiv($D->Total,'1',3)}} </td>
 </tr>
