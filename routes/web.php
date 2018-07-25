@@ -17,6 +17,7 @@ Route::get('/', function () {
 Auth::routes();
 Route::get('/home','HomeController@index');
 Route::get('/reportes/saidi_por_causa','saidi_por_causa@init');
+Route::post('/reportes/saidi_por_causa/order','saidi_por_causa@init');
 Route::get('reportes/confiabilidad_mensual','ConfiabilidadController@init');
 Route::get('reportes/lmx','ramales_por_causa@init');
 Route::get('reportes/gia','ramales_por_causa@GIA');
@@ -47,7 +48,6 @@ Route::get('reportes/caidi_meta','meta_vs_real@caidi_meta');
 Route::get('reportes/ni_meta','meta_vs_real@ni_meta');
 Route::get('reportes/upa_meta','meta_vs_real@upa_meta');
 Route::get('reportes/tpr_meta','meta_vs_real@tpr_meta');
-
 // Route::get('/Principal', function () {
 //     return view('Principal');});
 //

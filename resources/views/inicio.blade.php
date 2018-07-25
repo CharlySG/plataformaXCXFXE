@@ -6,3 +6,5 @@
   </div>
 </div>
 @endsection
+@section('content_js')
+@endsection
