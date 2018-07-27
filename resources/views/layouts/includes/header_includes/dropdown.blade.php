@@ -12,9 +12,8 @@
     </a>
   </li>
   <li>
-    <a href="#!">
+    <a class="modal-trigger" id="fileUpload" href="#modal1">
       <i class="material-icons">file_upload</i>Subir Archivo
-      <span class="badge">1</span>
     </a>
   </li>
   <li>
