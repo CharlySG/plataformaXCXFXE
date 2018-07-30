@@ -18,6 +18,7 @@ Auth::routes();
 Route::get('/home','HomeController@index');
 Route::get('/reportes/saidi_por_causa','saidi_por_causa@init');
 Route::post('/reportes/saidi_por_causa/order','saidi_por_causa@init');
+Route::post('/reportes/saidi_por_causa/upgrade','saidi_por_causa@upgradeDatos'); # update file
 Route::get('reportes/confiabilidad_mensual','ConfiabilidadController@init');
 Route::get('reportes/lmx','ramales_por_causa@init');
 Route::get('reportes/gia','ramales_por_causa@GIA');

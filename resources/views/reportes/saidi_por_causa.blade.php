@@ -1,3 +1,4 @@
+<div id="container" style="height: 400px"></div>
 <center>
     <h4 class="font-italic" style="color:green">SAIDI ZONA POR CAUSA </h4>
     <br>
@@ -21,10 +22,8 @@
         <thead>
             <tr class="green darken-4" style="color:white">
                 <th style="text-align:center;">Causa</th>
-                <th style="text-align:center;">
-                    <a id="OrderByBtnNI" href="#!" style="color:white" title="Ordenar Ascend/Descend">NI
-                        <i class="material-icons">keyboard_arrow_down</i>
-                    </a>
+                <th class="" style="text-align:center;">
+                    <a id="OrderByBtnNI" class="waves-effect" style="color:white;"><i id="orderIconArrow" class="material-icons right">keyboard_arrow_up</i>NI</a>
                 </th>
                 <th style="text-align:center;">SAIDI</th>
             </tr>

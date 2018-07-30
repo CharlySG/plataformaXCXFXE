@@ -5,9 +5,11 @@ $(document).ready(function () {
     $('#OrderByBtnNI').on('click', function (ev) {
         if (statusNI == 1) {
             order('NI', statusNI);
+            $('#orderIconArrow').text('keyboard_arrow_down');
             statusNI = 2;
         } else {
             order('NI', statusNI);
+            $('#orderIconArrow').text('keyboard_arrow_up');
             statusNI = 1;
         }
     });
