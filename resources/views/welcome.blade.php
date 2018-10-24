@@ -79,11 +79,11 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Sistema
+                    Reportes de Confiabilidad Zona Tuxtla
                 </div>
 
                 <div class="links">
-                    <a href="https://google.com">Google</a>        
+                    <a> Comisión Federal de Electricidad</a>
                 </div>
             </div>
         </div>

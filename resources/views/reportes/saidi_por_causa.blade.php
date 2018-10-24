@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-
-=======
->>>>>>> 93e35ca8955cf31d8805b0f4fc17f266be5915d5
 <center>
     <h4 class="font-italic" style="color:green">SAIDI ZONA POR CAUSA </h4>
     <br>
