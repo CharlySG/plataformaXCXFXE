@@ -4,7 +4,7 @@
 </center>
 <table class="table table-striped">
 	<thead>
-		<tr class="green darken-4" style="color:white">
+			<tr class="green darken-4" style="color:white">
 			<th>AREAS</th>
 			<th></th>
 			<th>Ene</th>
@@ -47,7 +47,7 @@
 				<td>{{bcdiv($D->SAIDI,'1', 3)}} </td>
 			@endforeach
 		</tr>
-		<tr class="red lighten-4" style="color:black">
+			<tr class="red lighten-4" style="color:black">
 			<td>Total Acumulado</td>
 			<td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td>
 			<td>--</td><td>--</td><td>--</td><td>--</td><td>--</td><td>--</td>
@@ -73,8 +73,6 @@
 			<th>0.582</th>
 			<th>7.98</th>
 		</tr>
-		<br>
-
 		<tr>
 			<td></td>
 			<td>REAL</td>
@@ -109,7 +107,6 @@
 			<th>0.526</th>
 			<th>6.82</th>
 		</tr>
-
 
 		<tr>
 			<td></td>

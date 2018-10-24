@@ -1,4 +1,4 @@
-<div id="container" style="height: 400px"></div>
+
 <center>
     <h4 class="font-italic" style="color:green">SAIDI ZONA POR CAUSA </h4>
     <br>
@@ -11,7 +11,7 @@
         </thead>
 
         @foreach($uno as $u)
-        <tr class="red lighten-4" style="color:red">
+        <tr class="red lighten-4" style="color:red; font-size:50px;">
             <td style="text-align:center;">{{bcdiv($u->SAIDI,'1',3)}} </td>
 
         </tr>

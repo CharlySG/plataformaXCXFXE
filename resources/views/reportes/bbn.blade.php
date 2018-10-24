@@ -24,7 +24,7 @@
     <tbody>
       @foreach($Datos as $D)
         <tr>
-          <td>{{$D->SE}}</td>
+          <td class="green lighten-5">{{$D->SE}}</td>
           <td>{{$D->CIRCUITO}}</td>
           <td>{{$D->RAMAL}} </td>
           <td>{{$D->CAUSA}} </td>
