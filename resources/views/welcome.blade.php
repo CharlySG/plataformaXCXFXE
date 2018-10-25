@@ -67,12 +67,12 @@
     <body>
         <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
-                <div class="top-right links">
+                        <div class="top-right links">
                     @auth
                         <a href="{{ url('/home') }}">Home</a>
                     @else
-                        <a href="{{ route('login') }}">Login</a>
-                        <a href="{{ route('register') }}">Register</a>
+                        <a style="color:green; font-size:15px" href="{{ route('register') }}">Registrate</a>
+                        <a style="color:green; font-size:15px" href="{{ route('login') }}">Login</a>
                     @endauth
                 </div>
             @endif
@@ -83,7 +83,7 @@
                 </div>
 
                 <div class="links">
-                    <a> Comisión Federal de Electricidad</a>
+                    <a style="color:green; font-size:25px;"> Comisión Federal de Electricidad</a>
                 </div>
             </div>
         </div>
