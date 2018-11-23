@@ -47,8 +47,8 @@ class saidi_por_causa extends Controller
        
         if($validate){
             Dato::truncate();
-            Excel::selectSheetsByIndex(7)->load($route, function($sheet){
-                // dd($sheet->all());
+            Excel::selectSheetsByIndex(0)->load($route, function($sheet){
+                dd($sheet->all());
                 $sheet->each(function($row){
                     $DATO=new Dato;
                     $DATO->Division = $row->division;

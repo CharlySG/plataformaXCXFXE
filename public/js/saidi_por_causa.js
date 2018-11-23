@@ -1,1 +1,44 @@
-"use strict";function order(r,t){$.ajax({method:"POST",url:"/reportes/saidi_por_causa/order",timeout:6e4,headers:{"X-CSRF-TOKEN":$('meta[name="csrf-token"]').attr("content")},data:{column:r,Order:t},success:function(r){M.toast({html:""+r.message,classes:"green rounded"}),$("#tableRenderSaidi").html(r.html)},error:function(r){M.toast({html:"Ocurrio un error inesperado",classes:"red rounded"})}})}var statusNI=1;$(document).ready(function(){$("#OrderByBtnNI").on("click",function(r){1==statusNI?(order("NI",statusNI),$("#orderIconArrow").text("keyboard_arrow_down"),statusNI=2):(order("NI",statusNI),$("#orderIconArrow").text("keyboard_arrow_up"),statusNI=1)})});
+'use strict';
+
+var statusNI = 1;
+$(document).ready(function () {
+    $('#OrderByBtnNI').on('click', function (ev) {
+        if (statusNI == 1) {
+            order('NI', statusNI);
+            $('#orderIconArrow').text('keyboard_arrow_down');
+            statusNI = 2;
+        } else {
+            order('NI', statusNI);
+            $('#orderIconArrow').text('keyboard_arrow_up');
+            statusNI = 1;
+        }
+    });
+});
+
+function order(column, status) {
+    $.ajax({
+        method: 'POST',
+        url: '/reportes/saidi_por_causa/order',
+        timeout: 60000,
+        headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        },
+        data: {
+            column: column,
+            Order: status
+        },
+        success: function success(data) {
+            M.toast({
+                html: '' + data.message,
+                classes: 'green rounded'
+            });
+            $('#tableRenderSaidi').html(data.html);
+        },
+        error: function error(_error) {
+            M.toast({
+                html: 'Ocurrio un error inesperado',
+                classes: 'red rounded'
+            });
+        }
+    });
+}

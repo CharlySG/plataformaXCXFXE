@@ -1,1 +1,18 @@
-"use strict";function getView(e){$.ajax({type:"GET",url:""+e,timeout:6e4,success:function(e){$("#renderme").html(e.html)},error:function(e){M.toast({html:"No Disponible Ahora",classes:"rounded red"})}})}
+'use strict';
+
+function getView(url) {
+    $.ajax({
+        type: 'GET',
+        url: '' + url,
+        timeout: 60000,
+        success: function success(data) {
+            $('#renderme').html(data.html);
+        },
+        error: function error(data) {
+            M.toast({
+                html: 'No Disponible Ahora',
+                classes: 'rounded red'
+            });
+        }
+    });
+}
